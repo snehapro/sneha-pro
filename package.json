@@ -1,3 +1,4 @@
+
 {
   "name": "sneha-pro",
   "private": true,
@@ -12,17 +13,14 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "lucide-react": "^1.59.0",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "scheduler": "^0.28.0"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "scheduler": "^0.27.0"
   },
   "devDependencies": {
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.7",
-    "@vitejs/plugin-react": "^6.1.1",
+    "@vitejs/plugin-react": "^5.0.0",
     "gh-pages": "^6.3.0",
-    "oxlint": "^1.81.0",
-    "vite": "^8.3.0"
+    "oxlint": "^1.18.0",
+    "vite": "^8.3.5"
   }
 }

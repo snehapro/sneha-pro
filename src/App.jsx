@@ -350,6 +350,13 @@ function HighlightsViewer({ galleryKey, onClose }) {
   )
 }
 
+const STATS = [
+  { i: "01", icon: "audio", n: "Live Sound", l: "Professional Audio" },
+  { i: "02", icon: "users", n: "Events", l: "Concerts & Productions" },
+  { i: "03", icon: "speaker", n: "PA Systems", l: "Quality Sound Solutions" },
+  { i: "04", icon: "headphones", n: "Audio", l: "Expert Engineering" },
+];
+
 const Stats = () => (
   <section className="section tight" aria-label="Statistics">
     <ul className="glass stats">
