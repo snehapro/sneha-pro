@@ -1,25 +1,36 @@
 
+
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
 
 const IMG = {
-  logo: '/images/logo.png',
-  hero: '/images/1stconsole.png',
-  console: '/images/console.png',
-  concert: '/images/concert.png',
-  corporate: '/images/corporate.png',
-  equipment: '/images/equipments.png',
+  logo: `${import.meta.env.BASE_URL}images/logo.png`,
+  hero: `${import.meta.env.BASE_URL}images/1stconsole.png`,
+  console: `${import.meta.env.BASE_URL}images/console.png`,
+  concert: `${import.meta.env.BASE_URL}images/concert.png`,
+  corporate: `${import.meta.env.BASE_URL}images/corporate.png`,
+  equipment: `${import.meta.env.BASE_URL}images/equipments.png`,
 }
 
 const NAV = ['Home', 'About', 'Projects', 'Contact']
 
 const I = ({ children, size = 28 }) => (
-  <svg className="ico" width={size} height={size} viewBox="0 0 32 32"
-    fill="none" stroke="currentColor" strokeWidth="2"
-    strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+  <svg
+    className="ico"
+    width={size}
+    height={size}
+    viewBox="0 0 32 32"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+  >
     {children}
   </svg>
 )
+
 
 const ICONS = {
   wave: <I><path d="M4 14v4M9 9v14M14 4v24M19 8v16M24 11v10M29 14v4" /></I>,
@@ -59,28 +70,25 @@ const PROJECTS = [
 /* Change these filenames to match the files in your folders.
    Supported images: jpg, jpeg, png, webp
    Supported videos: mp4, webm */
+
 const HIGHLIGHTS = {
   concert: [
-    { type: 'video', src: '/highlights/concert/cn1.mp4',       title: 'Anjujoseph live' },
-    { type: 'video', src: '/highlights/concert/video-02.mp4', title: 'cn2.mp4' },
-    { type: 'image', src: '/highlights/concert/photo-01.jpg', title: 'Concert Stage' },
+    {
+      type: 'video',
+      src: `${import.meta.env.BASE_URL}highlights/concert/cn1.mp4`,
+      title: 'Anjujoseph live',
+    },
   ],
-  corporate: [
-    { type: 'video', src: '/highlights/corporate/video-01.mp4', title: 'Corporate Event' },
-    { type: 'image', src: '/highlights/corporate/photo-01.jpg', title: 'Event Setup' },
-  ],
+  corporate: [],
   equipment: [
-    { type: 'video', src: '/highlights/equipment/e1.mp4', title: 'Quantum-225-DigiCo' },
-    { type: 'image', src: '/highlights/equipment/photo-01.jpg', title: 'Sound System' },
+    {
+      type: 'video',
+      src: `${import.meta.env.BASE_URL}highlights/equipment/e1.mp4`,
+      title: 'Quantum-225-DigiCo',
+    },
   ],
 }
 
-const STATS = [
-  { icon: 'wave', n: '100+', l: 'Events Completed' },
-  { icon: 'people', n: '50+', l: 'Happy Clients' },
-  { icon: 'case', n: '200+', l: 'Audio Systems' },
-  { icon: 'shield', n: '5+', l: 'Years of Experience' },
-]
 
 
 
